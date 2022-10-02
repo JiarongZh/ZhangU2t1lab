@@ -26,5 +26,26 @@ public class Point {
     public String coordinate(){
         return "(" + x + ", " + y + ")";
     }
-    
+    public String Quadrant() {
+        String Quadrant = null;
+        if(x>0 && y >0 ){
+            Quadrant = "I";
+        }
+        if (x<0 && y>0){
+            Quadrant = "II";
+        }
+        if (x<0 && y<0){
+            Quadrant = "III";
+        }
+        if (x>0 && y<0){
+            Quadrant = "IV";
+        }
+        if (x == 0 & y == 0){
+            Quadrant = "origin";
+        } else {
+            Quadrant = "axis";
+        }
+
+        return Quadrant;
+    }
 }
