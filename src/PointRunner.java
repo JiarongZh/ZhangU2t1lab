@@ -8,6 +8,7 @@ public class PointRunner {
     System.out.print("Enter a y value: ");
     int y = scan.nextInt();
     Point cord = new Point(x,y);
+    System.out.println(cord.coordinate());
     System.out.println(cord.Quadrant());
     }
 }
